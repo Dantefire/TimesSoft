@@ -1,0 +1,126 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-dic-2018, 18:21:11
+    Author     : SOPORTE
+*/
+
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header {
+	width:100%;
+}
+
+.navegacion {
+	width:90%;
+	margin:0px auto;
+	background: rgba(0, 10, 0);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.navegacion ul{
+	list-style: none;
+}
+.menu_bar {
+	display:none;
+}
+.menu{
+
+}
+.menu li {
+	position: relative;
+	display: inline-block;
+}
+.menu li span {
+	margin-right:10px;
+}
+.menu li a:hover {
+	color: #CE7D35;
+	transition: all .3s;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 25px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+	text-align: right;
+}
+/* Submenu*/
+.submenu{
+	position: absolute;
+	background: rgba(0, 10, 0, 0.4);
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+section {
+	padding:20px;
+}
+
+@media screen and (max-width:800px ) {
+	.navegacion {
+		width:50%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.menu li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, 0.3);
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:rgba(255, 255, 255, 0.1);
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+	.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+	position: relative;
+	width: 100%;
+        }

@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-dic-2018, 18:23:03
+    Author     : SOPORTE
+*/
+
+/*lOGIN*/
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family: Open Sans,sans-serif;
+}
+
+.login{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    /*border: 1px solid green;*/
+}
+
+.login ul{
+	/*border: 1px solid green;*/
+    padding: 0;
+}
+
+.login li{
+  width: 100%;
+  list-style: none;
+  /*border: 1px solid green; */
+}
+
+.login img{
+  width: 100%;
+  height: 90%;
+  /*border: 1px solid green;*/
+}
+h1{
+	position: absolute;
+    top: 30%;
+    left: 10%;
+	/*border: 1px solid red;*/
+	font-size: 7vw;
+}
+h2{
+	position: absolute;
+    top: 65%;
+    left: 10%;
+	/*border: 1px solid red;*/
+	font-size: 2vw;
+	background-color: #000;
+	color: #fff;
+	width: 16%;
+	height: 6.5%;
+	text-align: center;
+	font-family: arial;
+}
+h2:hover{
+	text-decoration: underline;
+	opacity: 0.9;
+}
+/*-------------------------------------------------------------------*/
+/*FINAL*/
+.piedepagina{
+	position: relative;
+	width: 100%;
+	border-top: 3px solid #E4DCDC;
+	border-bottom: 3px solid #E4DCDC;
+	height: 43vh;
+	background-color:#E4DCDC;
+}
+#titulo{
+	position: absolute;
+	width: 29%;
+	text-align: center;
+	top: 10%;
+	/*border: 1px solid black;*/
+}
+.social1{
+	/*border: 1px solid black;*/
+	width: 20%;
+	position: absolute;
+	left: 28%;
+	top: 10%;
+}
+.social1 img{
+	width: 13vw;
+}
+
+.fab, .fas{
+	font-size: 2.5vw;
+}
+.contacto{
+	/*border:1px solid red;*/
+	top: 10%;
+	left: 55%;
+	position: absolute;	
+	font-size: 1.5vw;
+	width: 25%;
+	list-style: none;
+
+
+}
+#texto{
+	font-size: 1vw;
+	margin: 0%;
+}
+.logo{
+	left: 73%;
+	text-align: center;
+	width: 25%;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 20%;
+}
+.logo img{
+	width: 50%;
+	height: 25vh;
+}
+a{
+	text-decoration: none;
+}
+.espacio{
+	border-top: 1px solid #f0e4e4
+}

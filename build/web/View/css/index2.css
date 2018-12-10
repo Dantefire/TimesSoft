@@ -1,0 +1,115 @@
+
+            body #titulo{
+                margin-left: 45vh;
+            }
+            body{
+                 background-color: #d4d4d4; 
+                 position: absolute;
+                 text-align: center;
+             }
+             form#form1{
+                 border-top: 25px solid #000;
+                 border-radius: 10px;
+                 float: left;
+                 position: relative;
+                 margin-left: 20vh    ;
+                 width: 450px;
+                 height: 250px;
+             }
+            form#form2{
+                border-top: 25px solid #000;
+                 border-radius: 10px;
+                position: relative;
+                 margin-left:65% ;
+                 width: 450px;
+                 height: 250px;
+             }
+             form label{
+                 display:block;
+                 color: white;
+                 background: #000;
+                 padding: 4px 0;
+                 text-align: center;
+                 font-size: 20px;
+                 font-weight:bold;
+                 font-family: cursive;     
+             }
+             
+                      
+             form input[type="text"],input[type="password"]{
+                 width: 230px;
+                 padding: 6px 50px;
+                 font-weight:bold;
+                 font-family: cursive;
+                 margin-left: 18px;
+                 margin-bottom: 10px;
+                 border: 1px solid grey;
+                 text-transform: capitalize;
+                 -moz-transition: all 0.5s;
+             }
+             
+             form input[type="text"]:focus,input[type="password"]:focus{
+                 border: 1px solid #333;
+                 background: none;
+                 width: 290px;
+                 padding: 12px 10px;
+                 
+             }
+              form input[type="button"]{
+                 background: #000;
+                 color: white;
+                 display: inline-block;
+                 margin-left: 18px;
+                 margin-bottom: 10px;
+                 padding: 8px 20px;
+                 border: none;
+                 font-weight: bold;
+                 
+             }
+             form input[type="button"]:hover{
+                 background: darkorange;
+                 cursor: pointer;
+             }
+            table {
+               width: 100%;
+               
+            }
+            th, td {
+               width: 25%;
+               text-align: center;
+               vertical-align: top;
+               border: 1px solid #000;
+               border-collapse: collapse;
+               padding: 1em;
+               caption-side: bottom;
+            }
+            caption {
+               padding: 0.5em;
+               color: #1dabb8;
+                background: #000;
+            }
+            th {
+               background: #000;
+               color: white;
+                text-align: center;
+               font-weight:bold;
+                 font-family: cursive; 
+            }
+            #finsesion{
+                margin-top: 80%;
+                float: right;
+                background: #000;
+                color: white;
+                width: 35vh;
+            }
+            #finsesion a{
+                text-decoration: none;
+                color: white;
+                
+                
+            }
+            #finsesion:hover{
+                 background: darkorange;
+                 cursor: pointer;
+            }
+       

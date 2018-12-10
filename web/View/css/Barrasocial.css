@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-dic-2018, 18:21:24
+    Author     : SOPORTE
+*/
+
+.social {
+	position: fixed; 
+	top: 300px;
+	z-index: 2000;
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease;
+	}
+
+	.social ul li .icon-Sofia {background:#3b5998;}
+	.social ul li .icon- {background: #00abf0;}
+	.social ul li .icon- {background: #d95232;}
+	.social ul li .icon-Sena {background: #ae181f;}
+	.social ul li .icon-BlackBoard {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000;
+		padding: 15px 30px;
+	}
+
+	@media screen and (max-width:800px ) {
+		.social{
+			display: none;
+		}
+	}
