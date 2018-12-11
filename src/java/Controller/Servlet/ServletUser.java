@@ -52,10 +52,10 @@ public class ServletUser extends HttpServlet {
         String IdEspecialidad = request.getParameter("seletesp");
         
         //instanciar la clase Bean
-        User BPersona=new User(iddocumento,IdTipoDocumento,nombre,apellido,estado,email,IdRol,IdEspecialidad);
+        User BUser=new User(iddocumento,IdTipoDocumento,nombre,apellido,estado,email,IdRol,IdEspecialidad);
         
         //se instancia la clase Dao pasando el objeto del Bean
-        DaoUser DUser=new DaoUser(BPersona);
+        DaoUser DUser=new DaoUser(BUser);
         
         //Declaramos El ResultSet
         ResultSet rs;

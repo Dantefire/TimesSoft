@@ -41,6 +41,7 @@ public class DaoUser extends Conexion implements InterfaceCrud {
             try{
               conn = this.ObtenerConexion();
               st = conn.createStatement();
+              
               idU = OUser.getDoUser();
               tdoU = OUser.getTdoUser();
               nomU = OUser.getNoUser();
@@ -102,11 +103,14 @@ public class DaoUser extends Conexion implements InterfaceCrud {
        return listo;
       } 
       
-      @Override
+    @Override
       public ResultSet consultarRegistro() { // Consulta de Registro método del tipo ResultSet
          try {        
-             //Select Inner Join
-         rt = st.executeQuery("select IdDocumento, IdTipoDocumento, Nombre, Apellido,  Estado, Email, Contraseña, IdRol, IdEspecialidad from usuario;");
+         rt = st.executeQuery("select u.IdDocumento, t.Documento, u.Nombre,u.apellido,u.Estado,u.Email,r.Roles,e.Nombre_Especialidad "
+                 + "from usuario u inner join tipodocumento t on u.IdTipoDocumento = t.IdTipoDocumento "
+                 + "inner join rol r on r.IdRol = u.Idrol "
+                 + "inner join especialidad e on e.IdEspecialidad = u.IdEspecialidad "
+                 + "where IdDocumento = '"+idU+"';");
         } catch (SQLException ex) {
             Logger.getLogger(DaoUser.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -117,11 +121,17 @@ public class DaoUser extends Conexion implements InterfaceCrud {
       public boolean actualizarRegistro(){
       try{
        // Consultar El tipo de documento y la descripción
-      rt=st.executeQuery("");
-       rt.next();
-      String idTipoDocumento=rt.getString(1);
+      rt=st.executeQuery("Select IdTipoDocumento from tipodocumento where Documento ='"+tdoU+"';");
+      rt.next();
+      String IdDocumento=rt.getString(1);
+      rt=st.executeQuery("Select IdRol from rol where Roles = '"+rolU+"';");
+      rt.next();
+      String IdRol=rt.getString(1);
+      rt=st.executeQuery("Select IdEspecialidad from especialidad where Nombre_Especialidad='"+espU+"';");
+      rt.next();
+      String IdEspecialidad=rt.getString(1);
       //Bloque de código para actualizar registros 
-      st.executeUpdate("");
+      st.executeUpdate("update usuario set IdDocumento='"+idU+"',IdTipoDocumento='"+IdDocumento+"',Nombre='"+nomU+"',Apellido='"+apeU+"',Estado='"+esU+"',Email='"+emU+"',IdRol='"+IdRol+"',IdEspecialidad='"+IdEspecialidad+"' where IdDocumento='"+idU+"'");
       listo=true;
       this.CerrarConexion();
       

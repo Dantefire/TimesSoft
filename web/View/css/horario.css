@@ -4,8 +4,8 @@
                  position: absolute;
                  text-align: center;
              }
-             form#form1{
-                 border-top: 25px solid #000;
+            form#form2{
+                border-top: 25px solid #000;
                  border-radius: 10px;
                  float: left;
                  position: relative;
@@ -87,7 +87,7 @@
             #botones{
                 position: absolute;
             }
-            #ST,#finsesion{
+            #finsesion{
                  background: #000;
                  color: white;
                  display: inline-block;
@@ -97,12 +97,12 @@
                  font-weight: bold;
                  margin-top: 120vh;
                  float: left;
-                 margin-left: 45vh;
+                 margin-left: 150vh;
             }
             #ST{
                 margin-left: 85vh;
             }
-            #ST a,#finsesion a{
+            #finsesion a{
                 text-decoration: none;
                 color: white;
             }
@@ -110,8 +110,4 @@
                  background: darkorange;
                  cursor: pointer;
              }
-             #ST:hover{
-                 background: darkorange;
-                 cursor: pointer;
-             }
-       
+             
